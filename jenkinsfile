@@ -1,0 +1,37 @@
+
+
+
+//jenkinsfile//
+//Declarative//
+pipeline {
+     agent any 
+
+     stages {
+            
+         stage('mvn clean') {
+           steps {
+              
+               sh "ehco clean the job" 
+             }
+   
+        }
+        stage('verify'){
+           steps {
+                 sh 'echo verify'
+                
+                }
+
+             }
+             stage('install'){
+                  steps {
+                      sh 'echo install'
+               }
+          
+           }
+
+         }
+    
+      }
+
+
+
